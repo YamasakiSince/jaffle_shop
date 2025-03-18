@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: jaffle_shop
-    database: default  # 使用するDatabricksのデータベース
+    database: since_workspace_aws  # 使用するDatabricksのデータベース
     schema: default    # 使用するスキーマ（必要に応じて変更）
     tables:
       - name: raw_customers
