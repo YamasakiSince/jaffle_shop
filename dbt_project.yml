@@ -5,8 +5,7 @@ version: '0.1'
 
 profile: 'jaffle_shop'
 
-model-paths: ["models"]
-source-paths: ["sources"]  # source-pathsに変更
+model-paths: ["models"]  # source-paths を削除して、model-paths のみを使用
 test-paths: ["tests"]
 analysis-paths: ["analysis"]
 macro-paths: ["macros"]
