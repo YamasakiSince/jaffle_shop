@@ -55,6 +55,16 @@ models:
         tests:
           - accepted_values:
               values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
+      - name: quality2
+        description: fail or success in quality test
+        tests:
+          - accepted_values:
+              values: ['safisfied', 'failed']
+      - name: quality1
+        description: 1 to 100 points in quality test
+        tests:
+          - dbt_utils.expression_is_true:
+              expression: "quality1 >= 1 and quality1 <= 100"
 
       - name: amount
         description: Total amount (AUD) of the order
