@@ -36,6 +36,8 @@ final as (
         orders.customer_id,
         orders.order_date,
         orders.status,
+        orders.quality1,
+        orders.quality2
 
         {% for payment_method in payment_methods -%}
 
